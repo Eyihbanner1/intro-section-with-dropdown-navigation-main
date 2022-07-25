@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="./images/logo.svg" alt="" />
+        <div class="nav-list-container">
+          <div class="nav-left-list">
+            <ul>
+              <li id="features">
+                <a href="#">Features</a>
+                <i class="fa-solid fa-angle-down" id="arrow-down-features"></i>
+              </li>
+              <li id="company">
+                <a href="#">Company</a>
+                <i class="fa-solid fa-angle-down" id="arrow-down-company"></i>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li class="register-btn">
+            <a href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <img src="./images/icon-menu.svg" class="menu-open" alt="" />
+      </div>
+
+      <ul class="features-list" id="features-list">
+        <li>
+          <a href="#">
+            <img src="./images/icon-todo.svg" alt="" />
+            <p>Todo List</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/icon-calendar.svg" alt="" />
+            <p>Calendar</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/icon-reminders.svg" alt="" />
+            <p>Reminders</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/icon-planning.svg" alt="" />
+            <p>Planning</p>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="company-list" id="company-list">
+        <li>
+          <a href="#">History</a>
+        </li>
+        <li>
+          <a href="#">Our Team</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="section-left">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button type="submit">Learn more</button>
+
+        <div class="social-container">
+          <div><img src="./images/client-databiz.svg" alt="" /></div>
+          <div><img src="./images/client-audiophile.svg" alt="" /></div>
+          <div><img src="./images/client-meet.svg" alt="" /></div>
+          <div><img src="./images/client-maker.svg" alt="" /></div>
+        </div>
+      </div>
+
+      <div class="section-right"></div>
+    </section>
+    <section class="mobile-menu" id="mobile-menu">
+      <div class="menu-container">
+        <div class="menu-list">
+          <ul>
+            <li class="mobile-features" id="mobile-features">
+              <a href="#">Features</a>
+              <i class="fa-solid fa-angle-down" id="features-arrow-down"></i>
+
+              <ul class="mobile-features-list" id="mobile-features-list">
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-todo.svg" alt="" />
+                    <p>Todo List</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-calendar.svg" alt="" />
+                    <p>Calendar</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-reminders.svg" alt="" />
+                    <p>Reminders</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-planning.svg" alt="" />
+                    <p>Planning</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-company" id="mobile-company">
+              <a href="#">Company</a>
+              <i class="fa-solid fa-angle-down" id="company-arrow-down"></i>
+
+              <ul class="mobile-company-list" id="mobile-company-list">
+                <li>
+                  <a href="#">History</a>
+                </li>
+                <li>
+                  <a href="#">Our Team</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+          <img
+            src="./images/icon-close-menu.svg"
+            class="menu-close"
+            id="menu-close"
+            alt=""
+          />
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li>
+              <a href="#">Login</a>
+            </li>
+            <li class="register-btn">
+              <a href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
